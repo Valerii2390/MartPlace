@@ -1,22 +1,17 @@
 $(document).ready(function() {
     $('.slider').slick({
-        prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
-        nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
-        appendArrows: '.arrows-wrap'
-    })
-    $('.slider__items').slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
-        nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
-        appendArrows: '.arrows-wrap'
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-arrow arrow-prev"><img src="images/slider/chevron-left.png" alt="prev arrow" /></button>',
+        nextArrow: '<button class="slick-arrow arrow-next"><img src="images/slider/chevron-right.png" alt="next arrow" /></button>',
 
+        appendArrows: '.arrow-wrap'
     })
-    $('.slider1').slick({
+    $('.rate-star').rateYo({
+        rating: 5,
+        starWidth: "12px",
+        readOnly: true
+    });
+    var mixer = mixitup('.products__inner');
 
-        prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev"><span class="lnr lnr-chevron-left"></span></button>',
-        nextArrow: '<button type="button" class="slick-arrow slick-arrow--next"><span class="lnr lnr-chevron-right"></span></button>',
-        appendArrows: '.arrows-wrap'
-
-    })
 });
